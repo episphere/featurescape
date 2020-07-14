@@ -195,6 +195,8 @@ fscape.fun = function (x, url) {
             alwaysNum[p] = true
         }
     });
+    // or maybe this is a Jaccard problem and we expect true false instead ?
+    //debugger
     var pp = Object.getOwnPropertyNames(alwaysNum);
     pp.forEach(function (p) {
         x.forEach(function (xi, i) {
@@ -240,7 +242,7 @@ fscape.clust2html = function (cl) {
     //header
     h += '<thead>'
         h +='<tr style="height:100px;vertical-align:bottom">'
-            h +='<td style="color:navy">Variable</td>'
+            h +='<td style="color:navy;width:100em">Variable</td>'
             ind.forEach(function(i,j){
                 h +='<td><span><div class="textColVertical" style="width:12px;transform:rotate(-90deg);font-size:12px">'+fscape.dt.parmNum[i]+'</div></span></td>'
                 4
